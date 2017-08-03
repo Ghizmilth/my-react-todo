@@ -9,5 +9,3 @@ export default (
   <Route path='/todos' component={TodosContainer}/>
   </Route>
 )
-
-{/*remember to add a path for './todos'*/}

@@ -4,7 +4,7 @@ import $ from 'jquery-ajax'
 class TodoModel {
   static all(){
     let request = $.ajax({
-      url: "https://super-crud.herokuapp.cpm/todos",
+      url: "https://super-crud.herokuapp.com/todos",
       method: 'GET'
           })
           return request
@@ -12,4 +12,4 @@ class TodoModel {
 }
 
 
-export default TodoModel 
+export default TodoModel
