@@ -10,7 +10,6 @@ class TodoModel {
           return request
   }
 
-
   static create(todo) {
     let request = $.ajax({
       url: "http://super-crud.herokuapp.com/todos",
@@ -18,6 +17,14 @@ class TodoModel {
       data: todo
     })
     return request
+  }
+
+  static delete(todo){
+  let request = $.ajax({
+    url: `https://super-crud.herokuapp.com/todos/${todo._id}`,
+    method: 'DELETE'
+  })
+  return request
   }
 }
 
